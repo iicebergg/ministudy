@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>cute study timer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+<body>
+
+<audio id="timerSound" src="Hey Ya! [ubk1skSE9OA].mp4"></audio>
+<div class="timer-container">
+<div class="input-container">
+        <label for="minutes"></label>
+        <button class="adjust-btn" id="decrement">-</button>
+        <input type="number" id="minutes" class="time-input" min="0" value="5">
+        <button class="adjust-btn" id="increment">+</button>
+    </div>
+    
+    <div class="timer-display" id="display">05:00</div>
+    
+    <div class="btn-container">
+        <button class="control-btn start-btn" id="startBtn">Start</button>
+        <button class="control-btn pause-btn" id="pauseBtn" disabled>Pause</button>
+        <button class="control-btn reset-btn" id="resetBtn">Reset</button>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

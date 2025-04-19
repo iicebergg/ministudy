@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Urbanist&display=swap');
+
+body {
+    background-image: url('forest.jpeg');
+    font-family: Sour Gummy
+}
+
+.timer-container {
+    background: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    border: 5px solid rgba(255, 255, 255, .3);
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.timer-display {
+    font-size: 150px;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333;
+}
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.time-input {
+    width: 70px;
+    padding: 8px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-family: Sour Gummy;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.adjust-btn {
+    background-color: #f0f0f0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adjust-btn:hover {
+    background-color: #e0e0e0;
+}
+.control-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 5px solid rgba(255, 255, 255, .3);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-family: Sour Gummy;
+}
+.start-btn {
+    background-color: #a9de99;
+    color: white;
+}
+.pause-btn {
+    background-color: #e3ce81;
+    color: white;
+}
+.reset-btn {
+    background-color: #e07769;
+    color: white;
+}
+.control-btn:hover {
+    opacity: 0.9;
+}
+.control-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+label {
+    font-weight: bold;
+}
+@media (max-width: 480px) {
+    .timer-display {
+        font-size: 2.5rem;
+    }
+    .control-btn {
+        padding: 8px 16px;
+    }
+}
